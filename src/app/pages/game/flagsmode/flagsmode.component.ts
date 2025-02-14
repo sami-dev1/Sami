@@ -11,11 +11,10 @@ import { FlagsMComponent } from '../flags-maplibre/flagsm.component';
   styleUrls: ['./flagsmode.component.css']
 })
 export class FlagsmodeComponent implements OnInit, OnDestroy {
-  currentFlag: Flag | null = null;    // Holds the current flag
-  flags: Flag[] = [];                 // List of available flags
-  guessedCountryName: string = '';    // Country name retrieved via reverse geocoding
+  currentFlag: Flag | null = null;    
+  flags: Flag[] = [];                 
+  guessedCountryName: string = '';
 
-  // Two-way binding property: will be updated by the child (CartomapComponent)
   selectedCoordinates: { lat: number, lng: number } | null = null;
   setSelectedCoordinates(coords: { lat: number, lng: number }): void {
     this.selectedCoordinates = coords;
@@ -31,17 +30,17 @@ export class FlagsmodeComponent implements OnInit, OnDestroy {
   isLoading: boolean = true;
 
   // Scoring Variables
-  totalScore: number = 0; // Accumulates the total score across rounds
-  currentRound: number = 1; // Current round number
-  roundscore: number = 0; // Score for the current round
-  totalRounds: number = 10; // Total number of rounds
-  timePassed: number = 0; // Time passed in seconds
+  totalScore: number = 0; 
+  currentRound: number = 1; 
+  roundscore: number = 0;
+  totalRounds: number = 10;
+  timePassed: number = 0;
 
   private platformId = inject(PLATFORM_ID);
 
   constructor(
     private flagService: FlagsService,
-    private router: Router,  // Inject Router for navigation
+    private router: Router,
     private route : ActivatedRoute
   ) {}
 

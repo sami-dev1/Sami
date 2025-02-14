@@ -29,7 +29,7 @@ export class SelectModeComponent {
         this.currentBackground = '/images/transition-select-mode/street-trans.png';
         break;
       case 'landmark':
-        this.currentBackground = '/images/transition-select-mode/landmark-trans.png';
+        this.currentBackground = '/images/transition-select-mode/3599.jpg';
         break;
       case 'flags':
         this.currentBackground = '/images/transition-select-mode/flags-trans.png';
