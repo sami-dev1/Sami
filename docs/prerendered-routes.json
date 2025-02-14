@@ -1,3 +1,32 @@
 {
-  "routes": {}
+  "routes": { 
+    "home": {
+      "path": "",
+      "component": "HomeComponent"
+    },
+    "select-mode": {
+      "path": "select-mode",
+      "component": "SelectModeComponent"
+    },
+    "streetview": {
+      "path": "streetview",
+      "component": "StreetviewmodeComponent"
+    },
+    "landmarks": {
+      "path": "landmarks",
+      "component": "LandmarksmodeComponent"
+    },
+    "flags": {
+      "path": "flags",
+      "component": "FlagsmodeComponent"
+    },
+    "results": {
+      "path": "results",
+      "component": "ResultsComponent"
+    },
+    "leaderboard": {
+      "path": "leaderboard",
+      "component": "LeaderboardComponent"
+    }
+  }
 }
